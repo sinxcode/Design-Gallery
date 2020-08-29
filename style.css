@@ -1,0 +1,679 @@
+body {
+
+    cursor: default;
+    background-color: rgb(0, 0, 0);
+}
+
+#gallery {
+
+    display: flex;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    height: 400px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+    align-self: center;
+    align-content: center;
+
+}
+
+
+
+.card img {
+    width: 80%;
+    height: 250px;
+
+}
+
+#scroll {
+    font-size: 25px;
+    color: #000000;
+
+    transition: .2s;
+    margin: 30px auto;
+
+
+
+}
+
+#scroll:hover {
+    color: #5a0bd9;
+
+}
+
+.card {
+    width: 250px;
+    padding-top: 20px;
+    height: 350px;
+    box-sizing: border-box;
+    background: rgb(234, 226, 226);
+    box-shadow: 0px 10px 30px 5px #000000;
+    border: none;
+    margin: 5px;
+
+    flex-wrap: wrap;
+    align-content: center;
+    outline: none;
+    transition: .2s;
+
+}
+
+
+
+
+.learnmore {
+    background: rgb(0, 0, 0);
+
+    width: 130px;
+    border: 1px solid rgb(255, 249, 249);
+    padding: 10px;
+    border-radius: 30px;
+    font-family: 'Gayathri', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    text-justify: center;
+    color: white;
+    margin-top: 10px;
+    transition: .2s;
+
+
+}
+
+.learnmore:hover {
+
+    background: rgb(89, 3, 255);
+
+
+
+}
+
+h2 {
+    font-family: 'Gayathri', sans-serif;
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    text-align: center;
+    color: #ffffff;
+}
+
+h1 {
+    font-family: 'Gayathri', sans-serif;
+    margin: 0 auto;
+    display: block;
+
+    padding: 20px;
+    background: rgba(87, 0, 255, 0.98);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Gayathri', sans-serif;
+    display: block;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    color: rgb(15, 17, 18);
+    width: 90%;
+
+}
+
+span {
+    color: #f8f4fc;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+#nav {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    padding: 10px;
+
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: center;
+
+    align-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+
+}
+
+
+
+#nav li {
+    float: left;
+
+    background: rgb(159, 159, 159);
+
+    padding: 20px;
+    margin-left: 20px;
+
+    line-height: .3rem;
+    width: 120px;
+
+
+
+    box-shadow: 2px 2px 20px 2px #000000;
+    transition: .3s;
+}
+
+#nav li:hover {
+    background: rgb(249, 232, 255);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.services {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    background: linear-gradient(to top, rgb(100, 17, 183) 39%, rgb(96, 66, 255) 100%, rgba(88, 62, 239, 0.82) 100%);
+    border: none;
+
+    outline: none;
+}
+
+#services-title {
+    color: aliceblue;
+    font-family: 'Gayathri', sans-serif;
+    font-size: 2rem;
+
+
+}
+
+#services-title::after {}
+
+
+.service {
+    width: 35%;
+    margin: 20px auto;
+    height: 190px;
+    background: #ffffff;
+    box-shadow: 3px 3px 30px 3px #000000;
+    border: 2px solid #ffffff;
+
+    outline: 5px solid #ededed;
+}
+
+.service h3 {
+    font-family: 'Gayathri', sans-serif;
+
+}
+
+
+
+
+.services h1 {
+    background-color: transparent;
+    padding: 0;
+}
+
+.ourservices {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: none;
+
+    background: rgb(93, 66, 255);
+
+}
+
+.service p {
+    font-family: 'Gayathri', sans-serif;
+    text-align: center;
+    text-overflow: ellipsis;
+    width: 400px;
+    color: #4e4c4c;
+
+
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    margin-top: 2%;
+
+}
+
+footer h1 {
+    font-family: sans-serif;
+    background-color: transparent;
+
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+footer p {
+    max-width: 800px;
+    font-weight: lighter;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+
+
+
+}
+
+
+
+
+#icon {
+    font-size: 60px;
+    color: #7011d0;
+    margin-top: -10px;
+    border-radius: 50%;
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    transition: .2s;
+
+
+
+}
+
+#nav2 {
+
+    list-style: none;
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    padding: 0;
+
+
+}
+
+#nav2 a {
+    color: aliceblue;
+    margin: 1px auto;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+
+    text-decoration: underline;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+#icon:hover {
+    transform: rotateX(-10deg);
+
+}
+
+@media all and (min-width:1800px) {
+    #gallery {
+
+        display: flex;
+        margin: 0 auto;
+        background: rgb(255, 255, 255);
+        height: 400px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 20px;
+
+        padding: 3px;
+        align-self: center;
+        align-content: center;
+
+    }
+
+    .card {
+        width: 250px;
+        padding-top: 20px;
+        height: 350px;
+        box-sizing: border-box;
+        background: rgb(255, 255, 255);
+
+        box-shadow: 0px 10px 30px 5px #000000;
+        border: none;
+        margin: 2%;
+
+        flex-wrap: wrap;
+        align-content: center;
+        outline: none;
+        transition: .2s;
+
+    }
+
+    h2 {
+        font-family: 'Gayathri', sans-serif;
+        margin: 0 auto;
+        display: block;
+        width: 800px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    h1 {
+        font-family: 'Gayathri', sans-serif;
+        margin: 0 auto;
+        display: block;
+
+        padding: 20px;
+        background: rgba(87, 0, 255, 0.98);
+        text-align: center;
+    }
+
+    h1 {
+        font-family: 'Gayathri', sans-serif;
+        display: block;
+        margin: 0 auto;
+        font-size: 2rem;
+        color: rgb(15, 17, 18);
+        width: 800px;
+    }
+
+    .services {
+        display: flex;
+
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        background: linear-gradient(to top, rgb(100, 17, 183) 39%, rgb(96, 66, 255) 100%, rgba(88, 62, 239, 0.82) 100%);
+        border: none;
+
+        outline: none;
+    }
+
+    #services-title {
+        color: aliceblue;
+        font-family: 'Gayathri', sans-serif;
+        font-size: 2rem;
+
+
+    }
+
+    .service {
+        width: 800px;
+        font-size: 1.5rem;
+        margin: 20px auto;
+        height: 300px;
+        background: #ffffff;
+        box-shadow: 3px 3px 30px 3px #000000;
+        border: 2px solid #ffffff;
+
+        outline: 5px solid #ededed;
+    }
+
+
+}
+
+@media all and (max-width:1080px) {
+    #gallery {
+        margin-top: 1%;
+        display: flex;
+        margin: 1% auto;
+        height: 750px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 2%;
+        align-self: center;
+        padding-top: 3%;
+    }
+
+
+
+    .card {
+        width: 40%;
+        height: 350px;
+        margin-left: 10px;
+        box-sizing: border-box;
+        background: white;
+        border: 2px solid white;
+        margin-top: 20px;
+    }
+
+
+
+    img:hover {
+        transform: scale(1);
+    }
+
+    .service {
+        height: 230px;
+    }
+
+    .service p {
+        font-family: 'Gayathri', sans-serif;
+        text-align: center;
+        text-overflow: ellipsis;
+        width: 90%;
+        color: #4e4c4c;
+
+
+    }
+
+    footer {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;
+        margin-top: 2%;
+
+    }
+
+    footer h1 {
+        font-family: sans-serif;
+        background-color: transparent;
+
+        text-align: center;
+        font-size: 1rem;
+        color: #ffffff;
+    }
+
+    footer p {
+        max-width: 700px;
+        font-weight: lighter;
+        text-align: center;
+        color: #ffffff;
+        font-size: .8rem;
+        text-align: center;
+
+
+
+    }
+
+
+
+
+    #icon {
+        font-size: 60px;
+        color: #7011d0;
+
+        border-radius: 50%;
+        border: 2px solid rgba(255, 255, 255, 0.7);
+        transition: .2s;
+
+
+
+    }
+
+}
+
+
+
+@media all and (max-width:750px) {
+    #nav {
+        display: none;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    #gallery {
+        margin-top: 1%;
+        display: flex;
+        margin: 1% auto;
+        height: 600px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 5px;
+        padding-bottom: 2%;
+        align-self: center;
+        padding: 15px;
+    }
+
+
+    .card img {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        height: 150px;
+    }
+
+    h1 {
+        font-family: 'Gayathri', sans-serif;
+        display: block;
+        margin: 20px auto;
+        font-size: 2rem;
+        color: rgb(15, 17, 18);
+        width: 90%;
+    }
+
+    .card {
+        width: 45%;
+        height: 250px;
+        margin-left: 10px;
+        box-sizing: border-box;
+        background: white;
+        border: 2px solid white;
+
+    }
+
+
+    .service p {
+        font-family: 'Gayathri', sans-serif;
+        text-align: center;
+        text-overflow: ellipsis;
+        width: 90%;
+        color: #4e4c4c;
+
+
+    }
+
+    #icon {
+        font-size: 40px;
+    }
+
+    .service {
+        height: 200px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media all and (max-width:650px) {
+
+    .service {
+        width: 90%;
+        height: 200px;
+    }
+
+
+
+    .learnmore {
+        width: 100px;
+    }
+
+}
+
+
+@media all and (max-width:385px) {
+
+    .service {
+        width: 90%;
+        height: 200px;
+    }
+
+
+
+    .learnmore {
+        width: 100px;
+    }
+
+    #icon {
+        font-size: 40px;
+    }
+
+}
+
+@media all and (max-width:365px) {
+
+    #gallery {
+        margin-top: 1%;
+        display: flex;
+        margin: 1% auto;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgba(233, 231, 242, 0.75);
+        padding-left: 5px;
+        align-content: flex-start;
+        align-self: center;
+    }
+
+
+    .card img {
+        display: block;
+        margin: 0 auto;
+        width: 75%;
+        box-sizing: border-box;
+        height: 150px;
+    }
+
+    h1 {
+        font-family: 'Gayathri', sans-serif;
+        display: block;
+        margin: 20px auto;
+        font-size: 1.5rem;
+        color: rgb(15, 17, 18);
+        width: 90%;
+    }
+
+    h2 {
+        font-size: .8rem;
+        word-spacing: 1px;
+    }
+
+    .card {
+        width: 80%;
+
+        height: 230px;
+        box-sizing: border-box;
+        background: white;
+        border: 2px solid white;
+
+    }
+
+    #icon {
+        font-size: 40px;
+    }
+
+    .service {
+        height: 200px;
+    }
+
+}
