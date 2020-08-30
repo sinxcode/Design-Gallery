@@ -120,9 +120,11 @@ h1 {
 
 span {
     color: #f8f4fc;
+    display: block;
+    width: 30%;
     font-weight: bold;
     font-size: 2rem;
-    margin: 0 10px;
+    margin: 2% 10px;
 }
 
 #nav {
