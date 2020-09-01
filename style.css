@@ -2,6 +2,7 @@ body {
 
     cursor: default;
     background-color: rgb(0, 0, 0);
+
 }
 
 #gallery {
@@ -19,7 +20,19 @@ body {
 
 }
 
+#bars {
+    display: none;
+}
 
+#dropdown {
+    display: none;
+    position: absolute;
+    pointer-events: none;
+}
+
+#hamburger-nav {
+    display: none;
+}
 
 .card img {
     width: 80%;
@@ -124,6 +137,7 @@ span {
     width: 30%;
     font-weight: bold;
     font-size: 2rem;
+    font-family: 'Gayathri', sans-serif;
     margin: 2% 10px;
 }
 
@@ -411,6 +425,7 @@ footer p {
 
 }
 
+
 @media all and (max-width:1080px) {
     #gallery {
         margin-top: 1%;
@@ -505,6 +520,118 @@ footer p {
 
 
 @media all and (max-width:750px) {
+
+    #dropdown {
+
+        width: 100%;
+        height: 100px;
+        left: 0;
+        z-index: 2;
+        background: linear-gradient(to bottom, rgba(8, 8, 8, 0.84), rgb(0, 0, 0));
+        display: flex;
+        visibility: hidden;
+        justify-content: center;
+        position: absolute;
+        transition: .2s height;
+        transition-timing-function: ease-in-out;
+
+        pointer-events: all;
+
+
+    }
+
+    #hamburger-nav {
+        list-style: none;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        margin-top: 60px;
+        width: 350px;
+
+
+        font-family: sans-serif;
+
+
+    }
+
+    #hamburger-nav li {
+        width: 80%;
+        display: block;
+        height: 200px;
+        margin-top: 30px;
+        text-align: center;
+        padding: 10px;
+        height: 30px;
+
+    }
+
+    #hamburger-nav li a {
+        font-family: 'Gayathri', sans-serif;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        color: #ffffff;
+
+    }
+
+    #bars {
+        width: 60px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        right: 2%;
+        top: 2%;
+        z-index: 2;
+        position: absolute;
+    }
+
+    .bar {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background: #ffffff;
+        margin-top: 5px;
+        transition: .5s all;
+
+    }
+
+    .bar-selected {
+        display: block;
+        width: 50px;
+        transform: rotate(40deg);
+        height: 4px;
+        background: #ffffff;
+        margin-top: 5px;
+        transition: .5s all;
+
+
+    }
+
+    .bar-selected:nth-child(2) {
+        transform: rotate(-40deg);
+        margin-top: -2px;
+
+    }
+
+    .bar-selected:nth-child(3) {
+
+        margin-top: -4px;
+    }
+
+    .bar-selected:nth-child(1) {
+
+        display: none;
+    }
+
+
+
+
+
     #nav {
         display: none;
     }
@@ -588,6 +715,7 @@ footer p {
 
 @media all and (max-width:650px) {
 
+
     .service {
         width: 90%;
         height: 200px;
@@ -652,12 +780,13 @@ footer p {
         margin: 20px auto;
         font-size: 1.5rem;
         color: rgb(15, 17, 18);
-        width: 90%;
+        max-width: 80%;
     }
 
     h2 {
         font-size: .8rem;
         word-spacing: 1px;
+        max-width: 90%;
     }
 
     .card {

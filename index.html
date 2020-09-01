@@ -26,7 +26,31 @@
 
     <center>
 
+        <div id="dropdown">
+
+
+
+            <ul id="hamburger-nav">
+                <li><a href="#">Contact US </a></li>
+                <li><a href="#">Our Designers</a></li>
+                <li><a href="#">Instagram</a></li>
+
+
+            </ul>
+
+        </div>
+
         <span>Xdesign</span>
+
+        <div id="bars" onclick="barsclick()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+
+
+
+        </div>
+
 
 
         <h1>Our design Team was founded in 2020 and we were designing houses for customers in Los-angeles and Toronto lately.</h1>
@@ -41,6 +65,8 @@
 
 
         </ul>
+
+
 
 
 
@@ -163,6 +189,38 @@
         </footer>
 
     </center>
+
+    <script type="text/javascript">
+        const DropdownmMenu = document.getElementById("dropdown");
+
+        const bars =
+            document.getElementById("bars");
+        const bar = document.getElementsByClassName("bar");
+
+
+        function barsclick() {
+
+            if (DropdownmMenu.style.visibility == "visible") {
+                DropdownmMenu.style.visibility = "hidden";
+
+                for (let i = 0; i < 3; i++) {
+                    bar[i].classList.remove("bar-selected");
+                    DropdownmMenu.style.height = 0 + "px";
+
+                }
+
+            } else {
+                DropdownmMenu.style.visibility = "visible";
+                DropdownmMenu.style.height = 100 + "%";
+                for (let i = 0; i < 3; i++) {
+                    bar[i].classList.add("bar-selected");
+                }
+            }
+
+        }
+
+    </script>
+
 
 
 
