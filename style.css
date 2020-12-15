@@ -3,7 +3,12 @@ body {
     cursor: default;
     background-color: rgb(0, 0, 0);
 
+
+
+
 }
+
+
 
 #gallery {
 
@@ -27,6 +32,7 @@ body {
 #dropdown {
     display: none;
     position: absolute;
+    z-index: 999;
     pointer-events: none;
 }
 
@@ -113,7 +119,7 @@ h2 {
 
 h1 {
     font-family: 'Gayathri', sans-serif;
-    margin: 0 auto;
+    margin: 25px auto;
     display: block;
 
     padding: 20px;
@@ -521,6 +527,8 @@ footer p {
 
 @media all and (max-width:750px) {
 
+
+
     #dropdown {
 
         width: 100%;
@@ -534,11 +542,12 @@ footer p {
         position: absolute;
         transition: .2s height;
         transition-timing-function: ease-in-out;
-
         pointer-events: all;
 
 
     }
+
+
 
     #hamburger-nav {
         list-style: none;
@@ -573,6 +582,11 @@ footer p {
         font-size: 1.5rem;
         color: #ffffff;
 
+    }
+
+    span {
+        margin-top: 5%;
+        position: sticky;
     }
 
     #bars {
@@ -666,6 +680,7 @@ footer p {
         font-family: 'Gayathri', sans-serif;
         display: block;
         margin: 20px auto;
+
         font-size: 2rem;
         color: rgb(15, 17, 18);
         width: 90%;
