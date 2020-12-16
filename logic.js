@@ -72,3 +72,45 @@
       closeMenu();
 
   }
+  var leftArrow = document.getElementById("leftarrow");
+  var rightArrow = document.getElementById("rightarrow");
+
+
+
+
+  function shiftright() {
+
+
+      var images = document.getElementsByClassName("img");
+
+      for (i = 0; i <= 3; i++) {
+
+          images[i].src = "img" + i + ".jpg";
+
+
+      }
+
+
+
+
+
+
+
+  }
+
+  function shiftleft() {
+
+      var images = document.getElementsByClassName("img");
+
+      for (i = 3; i <= 3; i--) {
+
+
+
+
+
+          images[i].src = "img" + i + ".jpg";
+
+
+
+      }
+  }
