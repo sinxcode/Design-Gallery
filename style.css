@@ -295,9 +295,13 @@ a {
 
     display: block;
     width: 100%;
-    background-color: red;
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+#page1,
+#page2 {
+    color: #606060;
 }
 
 footer {
