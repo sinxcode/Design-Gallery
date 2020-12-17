@@ -79,13 +79,16 @@
 
 
   function shiftright() {
-
+      var j = 1;
 
       var images = document.getElementsByClassName("img");
 
       for (i = 0; i <= 3; i++) {
 
-          images[i].src = "img" + i + ".jpg";
+
+          images[i].src = "img" + (j + 4) + ".jpg";
+
+          j++;
 
 
       }
