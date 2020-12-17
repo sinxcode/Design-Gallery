@@ -291,6 +291,15 @@ a {
 
 }
 
+#page-numbers {
+
+    display: block;
+    width: 100%;
+    background-color: red;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 footer {
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;

@@ -103,6 +103,10 @@
 
   function shiftleft() {
 
+
+
+
+
       var images = document.getElementsByClassName("img");
 
       var j = 8;
