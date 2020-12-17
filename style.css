@@ -42,8 +42,8 @@ body {
 }
 
 .card img {
-    width: 80%;
-    height: 250px;
+    width: 90%;
+    height: 220px;
     transition: 2s;
 
 }
@@ -92,7 +92,7 @@ body {
 }
 
 .card {
-    width: 230px;
+    width: 250px;
     padding-top: 20px;
     height: 320px;
     box-sizing: border-box;
@@ -104,7 +104,6 @@ body {
     flex-wrap: wrap;
     align-content: center;
     outline: none;
-    transition: .2s;
 
 }
 
