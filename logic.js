@@ -81,6 +81,15 @@
   function shiftright() {
       var j = 1;
 
+      document.getElementById("page2").classList.toggle("far");
+
+      document.getElementById("page2").classList.toggle("fas");
+
+      document.getElementById("page1").classList.toggle("fas");
+
+      document.getElementById("page1").classList.toggle("far");
+
+
       var images = document.getElementsByClassName("img");
 
       for (i = 0; i <= 3; i++) {
@@ -103,7 +112,13 @@
 
   function shiftleft() {
 
+      document.getElementById("page1").classList.toggle("far");
 
+      document.getElementById("page1").classList.toggle("fas");
+
+      document.getElementById("page2").classList.toggle("fas");
+
+      document.getElementById("page2").classList.toggle("far");
 
 
 
