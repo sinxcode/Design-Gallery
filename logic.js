@@ -105,13 +105,17 @@
 
       var images = document.getElementsByClassName("img");
 
-      for (i = 3; i <= 3; i--) {
+      var j = 8;
+
+      for (i = 3; i >= 0; i--) {
 
 
 
 
 
-          images[i].src = "img" + i + ".jpg";
+          images[i].src = "img" + (j - 4) + ".jpg";
+
+          j--;
 
 
 
