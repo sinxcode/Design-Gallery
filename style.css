@@ -101,12 +101,18 @@ body {
     border: none;
     margin: 5px;
 
+    cursor: pointer;
+
     flex-wrap: wrap;
     align-content: center;
     outline: none;
 
 }
 
+.card:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
 
 
 
@@ -301,8 +307,10 @@ a {
 
 #page1,
 #page2 {
-    color: #606060;
+    color: #170822;
+    outline: none;
 }
+
 
 footer {
     font-family: 'Roboto', sans-serif;
