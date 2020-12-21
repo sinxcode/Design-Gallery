@@ -90,17 +90,14 @@
       document.getElementById("page1").classList.toggle("far");
 
 
-      var images = document.getElementsByClassName("img");
+      var obj = document.getElementById("gallery");
 
-      for (i = 0; i <= 3; i++) {
+      var src = "img" + (j + 1) + ".jpg";
 
+      obj.style.backgroundImage = "url" + "(" + (src) + ")";
 
-          images[i].src = "img" + (j + 4) + ".jpg";
-
-          j++;
-
-
-      }
+      console.log(src);
+      j++;
 
 
 
@@ -124,19 +121,6 @@
 
       var images = document.getElementsByClassName("img");
 
-      var j = 8;
-
-      for (i = 3; i >= 0; i--) {
 
 
-
-
-
-          images[i].src = "img" + (j - 4) + ".jpg";
-
-          j--;
-
-
-
-      }
   }
