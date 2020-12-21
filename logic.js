@@ -76,10 +76,10 @@
   var rightArrow = document.getElementById("rightarrow");
 
 
+  var j = 1;
 
 
   function shiftright() {
-      var j = 1;
 
       document.getElementById("page2").classList.toggle("far");
 
@@ -96,8 +96,13 @@
 
       obj.style.backgroundImage = "url" + "(" + (src) + ")";
 
-      console.log(src);
       j++;
+      if ((j + 1 == 6)) {
+          j = 0;
+      }
+
+      console.log(src);
+
 
 
 
