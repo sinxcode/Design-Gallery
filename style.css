@@ -18,12 +18,18 @@ body {
     height: 400px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     padding: 30px;
     align-self: center;
     align-content: center;
     position: relative;
 
+
+}
+
+img {
+    width: 800px;
+    height: 300px;
 }
 
 #bars {
@@ -83,36 +89,20 @@ body {
 
 
 .arrow:hover {
-    color: #5c09e2;
+    color: rgba(92, 9, 226, 0.31);
 }
+
+.arrow {
+    color: rgba(99, 2, 255, 0.1);
+
+}
+
 
 #scroll:hover {
     color: #5a0bd9;
 
 }
 
-.card {
-    width: 250px;
-    padding-top: 20px;
-    height: 320px;
-    box-sizing: border-box;
-    background: rgba(195, 170, 170, 0.38);
-    box-shadow: 0px 10px 30px 5px #000000;
-    border: none;
-    margin: 5px;
-
-    cursor: pointer;
-
-    flex-wrap: wrap;
-    align-content: center;
-    outline: none;
-
-}
-
-.card:hover {
-    transform: scale(1.1);
-    transition: .2s;
-}
 
 
 
@@ -282,7 +272,6 @@ a {
     padding-top: 30px;
     padding-bottom: 30px;
     border: none;
-
     background: rgb(93, 66, 255);
 
 }
