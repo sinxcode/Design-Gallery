@@ -14,17 +14,18 @@ body {
 
     display: flex;
     margin: 0 auto;
-    background: rgb(255, 255, 255);
+    background: rgb(6, 2, 15);
     height: 400px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     padding: 30px;
-    align-self: center;
     align-content: center;
     position: relative;
 
-
+    background-image: url(img1.jpg);
+    background-size: 90% 100%;
+    background-position: center
 }
 
 img {
@@ -89,11 +90,11 @@ img {
 
 
 .arrow:hover {
-    color: rgba(92, 9, 226, 0.31);
+    color: rgb(0, 0, 0);
 }
 
 .arrow {
-    color: rgba(99, 2, 255, 0.1);
+    color: rgba(173, 166, 166, 0.94);
 
 }
 
@@ -106,23 +107,7 @@ img {
 
 
 
-.learnmore {
-    background: rgb(0, 0, 0);
 
-    width: 130px;
-    border: 1px solid rgb(255, 249, 249);
-    padding: 10px;
-    border-radius: 30px;
-    font-family: 'Gayathri', sans-serif;
-    font-weight: bolder;
-    text-align: center;
-    text-justify: center;
-    color: white;
-    margin-top: 10px;
-    transition: .2s;
-
-
-}
 
 .learnmore:hover {
 
@@ -291,7 +276,6 @@ a {
     display: block;
     width: 100%;
     margin-top: 25px;
-    margin-bottom: 25px;
 }
 
 #page1,
