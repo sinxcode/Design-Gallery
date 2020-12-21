@@ -74,6 +74,7 @@
   }
   var leftArrow = document.getElementById("leftarrow");
   var rightArrow = document.getElementById("rightarrow");
+  var obj = document.getElementById("gallery");
 
 
   var j = 1;
@@ -90,7 +91,7 @@
       document.getElementById("page1").classList.toggle("far");
 
 
-      var obj = document.getElementById("gallery");
+
 
       var src = "img" + (j + 1) + ".jpg";
 
