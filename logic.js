@@ -75,20 +75,25 @@
   var leftArrow = document.getElementById("leftarrow");
   var rightArrow = document.getElementById("rightarrow");
   var obj = document.getElementById("gallery");
+  var pages = document.getElementsByClassName("pages");
 
 
   var j = 1;
+  var i = 1;
 
 
   function shiftright() {
 
-      document.getElementById("page2").classList.toggle("far");
 
-      document.getElementById("page2").classList.toggle("fas");
 
-      document.getElementById("page1").classList.toggle("fas");
+      pages[j - 1].classList.toggle("fas");
+      pages[j - 1].classList.toggle("far");
 
-      document.getElementById("page1").classList.toggle("far");
+      pages[j].classList.toggle("far");
+      pages[j].classList.toggle("fas");
+
+
+
 
 
 
@@ -98,9 +103,22 @@
       obj.style.backgroundImage = "url" + "(" + (src) + ")";
 
       j++;
+
       if ((j + 1 == 6)) {
-          j = 0;
+
+
+          j = 1;
+
+
+
+
+
+
+
       }
+
+
+
 
       console.log(src);
 
