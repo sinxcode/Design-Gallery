@@ -18,14 +18,17 @@ body {
     height: 400px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     padding: 30px;
-    align-content: center;
+    align-content: flex-end;
     position: relative;
 
     background-image: url(img1.jpg);
     background-size: 90% 100%;
-    background-position: center
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+
 }
 
 img {
@@ -276,13 +279,15 @@ a {
     display: block;
     width: 100%;
     margin-top: 25px;
+
 }
 
-#page1,
-#page2 {
-    color: #170822;
-    outline: none;
+
+.far {
+    color: #000000;
 }
+
+
 
 
 footer {
