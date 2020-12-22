@@ -202,6 +202,7 @@ a {
     background: linear-gradient(to top, rgb(76, 54, 191) 39%, rgb(96, 66, 255) 100%, rgba(88, 62, 239, 0.82) 100%);
     border: none;
     padding-bottom: 50px;
+    padding-top: 50px;
     outline: none;
 }
 

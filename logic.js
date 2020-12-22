@@ -72,6 +72,9 @@
       closeMenu();
 
   }
+
+
+
   var leftArrow = document.getElementById("leftarrow");
   var rightArrow = document.getElementById("rightarrow");
   var obj = document.getElementById("gallery");
@@ -79,18 +82,55 @@
 
 
   var j = 1;
-  var i = 1;
 
+  function changePages() {
+
+      if (0 <= j && j < 4) {
+
+          pages[j].classList.toggle("fas");
+
+          pages[j + 1].classList.toggle("far");
+
+          pages[j].classList.toggle("far");
+
+          pages[j + 1].classList.toggle("fas");
+
+
+
+
+
+
+      } else if (j == 4) {
+
+          pages[4].classList.toggle("far");
+
+
+          pages[0].classList.toggle("fas");
+          pages[4].classList.toggle("fas");
+          pages[0].classList.toggle("far");
+
+
+
+
+
+
+      }
+
+  }
 
   function shiftright() {
 
 
+      changePages();
 
-      pages[j - 1].classList.toggle("fas");
-      pages[j - 1].classList.toggle("far");
+      if ((j + 1) == 6) {
 
-      pages[j].classList.toggle("far");
-      pages[j].classList.toggle("fas");
+          obj.backgroundImage = "url('img1.jpg')";
+
+          j = 0;
+
+      }
+
 
 
 
@@ -104,23 +144,6 @@
 
       j++;
 
-      if ((j + 1 == 6)) {
-
-
-          j = 1;
-
-
-
-
-
-
-
-      }
-
-
-
-
-      console.log(src);
 
 
 
