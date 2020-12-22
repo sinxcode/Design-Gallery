@@ -96,10 +96,6 @@
           pages[j + 1].classList.toggle("fas");
 
 
-
-
-
-
       } else if (j == 4) {
 
           pages[4].classList.toggle("far");
@@ -108,9 +104,6 @@
           pages[0].classList.toggle("fas");
           pages[4].classList.toggle("fas");
           pages[0].classList.toggle("far");
-
-
-
 
 
 
