@@ -193,7 +193,7 @@ a {
     color: black;
 }
 
-.services {
+2 .services {
     display: flex;
 
     flex-direction: row;
@@ -352,17 +352,47 @@ footer p {
     #gallery {
 
         display: flex;
-        margin: 0 auto;
-        background: rgb(255, 255, 255);
-        height: 400px;
+        margin: 150px auto;
+        height: 1200px;
+
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         padding-left: 20px;
-
-        padding: 3px;
+        background-size: 70%;
         align-self: center;
         align-content: center;
+
+    }
+
+    .arrow-left {
+        z-index: 999;
+        position: absolute;
+        top: 500px;
+        left: 0;
+        color: rgba(90, 11, 217, 0.78);
+
+        margin-left: 600px;
+        font-size: 70px;
+    }
+
+    .arrow-right {
+        z-index: 999;
+        position: absolute;
+        top: 500px;
+        right: 0;
+        font-size: 70px;
+        float: right;
+        margin-right: 600px;
+        color: rgba(90, 11, 217, 0.78);
+    }
+
+
+    #page-numbers {
+
+        display: block;
+        width: 100%;
+        margin-top: 700px;
 
     }
 
@@ -432,18 +462,43 @@ footer p {
 }
 
 
-@media all and (max-width:1080px) {
+@media all and (max-width:1799px) {
     #gallery {
         margin-top: 1%;
+        width: 50%;
         display: flex;
         margin: 1% auto;
-        height: 750px;
+        height: 80px;
+
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         padding-bottom: 2%;
         align-self: center;
-        padding-top: 3%;
+        background-size: 90%;
+        background: red;
+    }
+
+    .arrow-left {
+        z-index: 999;
+        position: absolute;
+        top: 500px;
+        left: 0;
+        color: rgba(90, 11, 217, 0.78);
+
+        margin-left: 600px;
+        font-size: 70px;
+    }
+
+    .arrow-right {
+        z-index: 999;
+        position: absolute;
+        top: 500px;
+        right: 0;
+        font-size: 70px;
+        float: right;
+        margin-right: 400px;
+        color: rgba(90, 11, 217, 0.78);
     }
 
 
